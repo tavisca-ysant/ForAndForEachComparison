@@ -1,0 +1,12 @@
+C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\bin\Release\netcoreapp2.2\ForAndForEachComparison.deps.json
+C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\bin\Release\netcoreapp2.2\ForAndForEachComparison.runtimeconfig.json
+C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\bin\Release\netcoreapp2.2\ForAndForEachComparison.runtimeconfig.dev.json
+C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\bin\Release\netcoreapp2.2\ForAndForEachComparison.dll
+C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\bin\Release\netcoreapp2.2\ForAndForEachComparison.pdb
+C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\obj\Release\netcoreapp2.2\ForAndForEachComparison.csprojResolveAssemblyReference.cache
+C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\obj\Release\netcoreapp2.2\ForAndForEachComparison.csproj.CoreCompileInputs.cache
+C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\obj\Release\netcoreapp2.2\ForAndForEachComparison.AssemblyInfoInputs.cache
+C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\obj\Release\netcoreapp2.2\ForAndForEachComparison.AssemblyInfo.cs
+C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\obj\Release\netcoreapp2.2\ForAndForEachComparison.dll
+C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\obj\Release\netcoreapp2.2\ForAndForEachComparison.pdb
+C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\obj\Release\netcoreapp2.2\ForAndForEachComparison.csprojAssemblyReference.cache

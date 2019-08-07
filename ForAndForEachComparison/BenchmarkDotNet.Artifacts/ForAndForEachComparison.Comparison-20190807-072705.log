@@ -1,0 +1,295 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\bin\Release\netcoreapp2.2\9ee8ef26-e8d0-4e28-b100-d512e46d9630
+// command took 3.27s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\bin\Release\netcoreapp2.2\9ee8ef26-e8d0-4e28-b100-d512e46d9630
+// command took 15s and exited with 1
+// start dotnet build -c Release  --no-restore --no-dependencies /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\bin\Release\netcoreapp2.2\9ee8ef26-e8d0-4e28-b100-d512e46d9630
+// command took 4.26s and exited with 0
+// ***** Done, took 00:00:22 (22.84 sec)   *****
+// Found 2 benchmarks:
+//   Comparison.ForLoop: DefaultJob
+//   Comparison.ForEachLoop: DefaultJob
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)// **************************
+// Benchmark: Comparison.ForLoop: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "9ee8ef26-e8d0-4e28-b100-d512e46d9630.dll" --benchmarkName "ForAndForEachComparison.Comparison.ForLoop" --job "Default" --benchmarkId 0 in C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\bin\Release\netcoreapp2.2\9ee8ef26-e8d0-4e28-b100-d512e46d9630\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.6 (CoreCLR 4.6.27817.03, CoreFX 4.6.27818.02), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 358472.61 ns, 358.4726 us/op
+WorkloadJitting  1: 1 op, 694335.55 ns, 694.3355 us/op
+
+OverheadJitting  2: 16 op, 347532.45 ns, 21.7208 us/op
+WorkloadJitting  2: 16 op, 494495.28 ns, 30.9060 us/op
+
+WorkloadPilot    1: 16 op, 10210.82 ns, 638.1761 ns/op
+WorkloadPilot    2: 32 op, 15316.23 ns, 478.6320 ns/op
+WorkloadPilot    3: 64 op, 30267.78 ns, 472.9340 ns/op
+WorkloadPilot    4: 128 op, 113777.67 ns, 888.8881 ns/op
+WorkloadPilot    5: 256 op, 230472.72 ns, 900.2841 ns/op
+WorkloadPilot    6: 512 op, 374882.85 ns, 732.1931 ns/op
+WorkloadPilot    7: 1024 op, 779668.80 ns, 761.3953 ns/op
+WorkloadPilot    8: 2048 op, 2398812.63 ns, 1.1713 us/op
+WorkloadPilot    9: 4096 op, 4263380.73 ns, 1.0409 us/op
+WorkloadPilot   10: 8192 op, 7677440.29 ns, 937.1875 ns/op
+WorkloadPilot   11: 16384 op, 13014415.49 ns, 794.3369 ns/op
+WorkloadPilot   12: 32768 op, 24266371.04 ns, 740.5509 ns/op
+WorkloadPilot   13: 65536 op, 46048231.52 ns, 702.6403 ns/op
+WorkloadPilot   14: 131072 op, 89954379.53 ns, 686.2975 ns/op
+WorkloadPilot   15: 262144 op, 181710238.90 ns, 693.1696 ns/op
+WorkloadPilot   16: 524288 op, 370129349.17 ns, 705.9657 ns/op
+WorkloadPilot   17: 1048576 op, 750510723.18 ns, 715.7428 ns/op
+
+OverheadWarmup   1: 1048576 op, 2204807.11 ns, 2.1027 ns/op
+OverheadWarmup   2: 1048576 op, 1942972.59 ns, 1.8530 ns/op
+OverheadWarmup   3: 1048576 op, 2123120.57 ns, 2.0248 ns/op
+OverheadWarmup   4: 1048576 op, 1995120.69 ns, 1.9027 ns/op
+OverheadWarmup   5: 1048576 op, 2317855.44 ns, 2.2105 ns/op
+OverheadWarmup   6: 1048576 op, 2021012.40 ns, 1.9274 ns/op
+
+OverheadActual   1: 1048576 op, 1928750.38 ns, 1.8394 ns/op
+OverheadActual   2: 1048576 op, 2045080.76 ns, 1.9503 ns/op
+OverheadActual   3: 1048576 op, 2758379.25 ns, 2.6306 ns/op
+OverheadActual   4: 1048576 op, 1881343.01 ns, 1.7942 ns/op
+OverheadActual   5: 1048576 op, 2017365.68 ns, 1.9239 ns/op
+OverheadActual   6: 1048576 op, 2010072.24 ns, 1.9170 ns/op
+OverheadActual   7: 1048576 op, 2137707.45 ns, 2.0387 ns/op
+OverheadActual   8: 1048576 op, 2050915.51 ns, 1.9559 ns/op
+OverheadActual   9: 1048576 op, 2126037.95 ns, 2.0275 ns/op
+OverheadActual  10: 1048576 op, 1994391.34 ns, 1.9020 ns/op
+OverheadActual  11: 1048576 op, 2295610.44 ns, 2.1893 ns/op
+OverheadActual  12: 1048576 op, 2019918.39 ns, 1.9263 ns/op
+OverheadActual  13: 1048576 op, 2384225.75 ns, 2.2738 ns/op
+OverheadActual  14: 1048576 op, 2174904.00 ns, 2.0742 ns/op
+OverheadActual  15: 1048576 op, 2163963.84 ns, 2.0637 ns/op
+OverheadActual  16: 1048576 op, 2081912.63 ns, 1.9855 ns/op
+OverheadActual  17: 1048576 op, 1976157.74 ns, 1.8846 ns/op
+OverheadActual  18: 1048576 op, 1837947.04 ns, 1.7528 ns/op
+OverheadActual  19: 1048576 op, 2285399.63 ns, 2.1795 ns/op
+OverheadActual  20: 1048576 op, 2114003.77 ns, 2.0161 ns/op
+
+WorkloadWarmup   1: 1048576 op, 1042293203.61 ns, 994.0083 ns/op
+WorkloadWarmup   2: 1048576 op, 457621098.47 ns, 436.4215 ns/op
+WorkloadWarmup   3: 1048576 op, 447608298.48 ns, 426.8725 ns/op
+WorkloadWarmup   4: 1048576 op, 1644763127.28 ns, 1.5686 us/op
+WorkloadWarmup   5: 1048576 op, 469777440.66 ns, 448.0147 ns/op
+WorkloadWarmup   6: 1048576 op, 436380411.28 ns, 416.1648 ns/op
+WorkloadWarmup   7: 1048576 op, 449293447.94 ns, 428.4796 ns/op
+WorkloadWarmup   8: 1048576 op, 435786725.21 ns, 415.5986 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 1048576 op, 4095921143.32 ns, 3.9062 us/op
+WorkloadActual   2: 1048576 op, 481943993.67 ns, 459.6176 ns/op
+WorkloadActual   3: 1048576 op, 444445497.94 ns, 423.8563 ns/op
+WorkloadActual   4: 1048576 op, 431544130.79 ns, 411.5526 ns/op
+WorkloadActual   5: 1048576 op, 443231140.07 ns, 422.6982 ns/op
+WorkloadActual   6: 1048576 op, 439972066.12 ns, 419.5901 ns/op
+WorkloadActual   7: 1048576 op, 440721102.48 ns, 420.3044 ns/op
+WorkloadActual   8: 1048576 op, 426086813.82 ns, 406.3481 ns/op
+WorkloadActual   9: 1048576 op, 447215182.03 ns, 426.4976 ns/op
+WorkloadActual  10: 1048576 op, 454700440.16 ns, 433.6361 ns/op
+
+OutOfMemoryException!
+BenchmarkDotNet continues to run additional iterations until desired accuracy level is achieved. It's possible only if the benchmark method doesn't have any side-effects.
+If your benchmark allocates memory and keeps it alive, you are creating a memory leak.
+You should redesign your benchmark and remove the side-effects. You can use `OperationsPerInvoke`, `IterationSetup` and `IterationCleanup` to do that.
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown.
+   at System.Collections.Generic.List`1.set_Capacity(Int32 value)
+   at System.Collections.Generic.List`1.AddWithResize(T item)
+   at ForAndForEachComparison.Comparison.ForLoop() in C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\Comparison.cs:line 29
+   at BenchmarkDotNet.Autogenerated.Runnable_0.WorkloadActionUnroll(Int64 invokeCount) in C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\bin\Release\netcoreapp2.2\9ee8ef26-e8d0-4e28-b100-d512e46d9630\9ee8ef26-e8d0-4e28-b100-d512e46d9630.notcs:line 739
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunAuto(Int64 invokeCount, IterationMode iterationMode, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.Run(Int64 invokeCount, IterationMode iterationMode, Boolean runAuto, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_0.Run(IHost host, String benchmarkName) in C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\bin\Release\netcoreapp2.2\9ee8ef26-e8d0-4e28-b100-d512e46d9630\9ee8ef26-e8d0-4e28-b100-d512e46d9630.notcs:line 168
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\bin\Release\netcoreapp2.2\9ee8ef26-e8d0-4e28-b100-d512e46d9630\9ee8ef26-e8d0-4e28-b100-d512e46d9630.notcs:line 49
+// AfterAll
+ExitCode != 0
+No more Benchmark runs will be launched as NO measurements were obtained from the previous run!
+
+
+// **************************
+// Benchmark: Comparison.ForEachLoop: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "9ee8ef26-e8d0-4e28-b100-d512e46d9630.dll" --benchmarkName "ForAndForEachComparison.Comparison.ForEachLoop" --job "Default" --benchmarkId 1 in C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\bin\Release\netcoreapp2.2\9ee8ef26-e8d0-4e28-b100-d512e46d9630\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.6 (CoreCLR 4.6.27817.03, CoreFX 4.6.27818.02), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 531691.82 ns, 531.6918 us/op
+WorkloadJitting  1: 1 op, 1184819.43 ns, 1.1848 ms/op
+
+OverheadJitting  2: 16 op, 310335.90 ns, 19.3960 us/op
+WorkloadJitting  2: 16 op, 450734.63 ns, 28.1709 us/op
+
+WorkloadPilot    1: 16 op, 13128.19 ns, 820.5121 ns/op
+WorkloadPilot    2: 32 op, 25527.04 ns, 797.7201 ns/op
+WorkloadPilot    3: 64 op, 50689.41 ns, 792.0221 ns/op
+WorkloadPilot    4: 128 op, 157173.65 ns, 1.2279 us/op
+WorkloadPilot    5: 256 op, 274598.04 ns, 1.0726 us/op
+WorkloadPilot    6: 512 op, 598426.80 ns, 1.1688 us/op
+WorkloadPilot    7: 1024 op, 1131577.32 ns, 1.1051 us/op
+WorkloadPilot    8: 2048 op, 2911906.18 ns, 1.4218 us/op
+WorkloadPilot    9: 4096 op, 3695221.70 ns, 902.1537 ns/op
+WorkloadPilot   10: 8192 op, 9676207.70 ns, 1.1812 us/op
+WorkloadPilot   11: 16384 op, 14958117.42 ns, 912.9710 ns/op
+WorkloadPilot   12: 32768 op, 34718600.83 ns, 1.0595 us/op
+WorkloadPilot   13: 65536 op, 63525138.67 ns, 969.3167 ns/op
+WorkloadPilot   14: 131072 op, 122446292.93 ns, 934.1911 ns/op
+WorkloadPilot   15: 262144 op, 234958190.35 ns, 896.2944 ns/op
+WorkloadPilot   16: 524288 op, 498597471.36 ns, 950.9992 ns/op
+WorkloadPilot   17: 1048576 op, 863229024.98 ns, 823.2394 ns/op
+
+OverheadWarmup   1: 1048576 op, 2425069.01 ns, 2.3127 ns/op
+OverheadWarmup   2: 1048576 op, 2025388.47 ns, 1.9316 ns/op
+OverheadWarmup   3: 1048576 op, 2037422.64 ns, 1.9430 ns/op
+OverheadWarmup   4: 1048576 op, 2888202.50 ns, 2.7544 ns/op
+OverheadWarmup   5: 1048576 op, 2127496.64 ns, 2.0289 ns/op
+OverheadWarmup   6: 1048576 op, 2221946.69 ns, 2.1190 ns/op
+OverheadWarmup   7: 1048576 op, 2797763.83 ns, 2.6682 ns/op
+OverheadWarmup   8: 1048576 op, 2237262.92 ns, 2.1336 ns/op
+
+OverheadActual   1: 1048576 op, 2312385.36 ns, 2.2053 ns/op
+OverheadActual   2: 1048576 op, 2443667.29 ns, 2.3305 ns/op
+OverheadActual   3: 1048576 op, 2317490.76 ns, 2.2101 ns/op
+OverheadActual   4: 1048576 op, 2252214.47 ns, 2.1479 ns/op
+OverheadActual   5: 1048576 op, 2095040.83 ns, 1.9980 ns/op
+OverheadActual   6: 1048576 op, 2031952.56 ns, 1.9378 ns/op
+OverheadActual   7: 1048576 op, 2263154.63 ns, 2.1583 ns/op
+OverheadActual   8: 1048576 op, 2588806.76 ns, 2.4689 ns/op
+OverheadActual   9: 1048576 op, 2181103.42 ns, 2.0801 ns/op
+OverheadActual  10: 1048576 op, 2522071.77 ns, 2.4052 ns/op
+OverheadActual  11: 1048576 op, 2051644.85 ns, 1.9566 ns/op
+OverheadActual  12: 1048576 op, 2171621.95 ns, 2.0710 ns/op
+OverheadActual  13: 1048576 op, 2038516.66 ns, 1.9441 ns/op
+OverheadActual  14: 1048576 op, 2429080.41 ns, 2.3166 ns/op
+OverheadActual  15: 1048576 op, 2299621.84 ns, 2.1931 ns/op
+OverheadActual  16: 1048576 op, 2047998.13 ns, 1.9531 ns/op
+OverheadActual  17: 1048576 op, 2499826.78 ns, 2.3840 ns/op
+OverheadActual  18: 1048576 op, 1933855.79 ns, 1.8443 ns/op
+OverheadActual  19: 1048576 op, 2153388.35 ns, 2.0536 ns/op
+OverheadActual  20: 1048576 op, 2752909.17 ns, 2.6254 ns/op
+
+WorkloadWarmup   1: 1048576 op, 1190796407.25 ns, 1.1356 us/op
+WorkloadWarmup   2: 1048576 op, 603107735.06 ns, 575.1684 ns/op
+WorkloadWarmup   3: 1048576 op, 552973718.09 ns, 527.3568 ns/op
+WorkloadWarmup   4: 1048576 op, 1767791072.10 ns, 1.6859 us/op
+WorkloadWarmup   5: 1048576 op, 594572950.82 ns, 567.0290 ns/op
+WorkloadWarmup   6: 1048576 op, 553389079.53 ns, 527.7530 ns/op
+WorkloadWarmup   7: 1048576 op, 559366054.14 ns, 533.4530 ns/op
+WorkloadWarmup   8: 1048576 op, 553032065.61 ns, 527.4125 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 1048576 op, 3751242984.62 ns, 3.5775 us/op
+WorkloadActual   2: 1048576 op, 651086904.99 ns, 620.9249 ns/op
+WorkloadActual   3: 1048576 op, 581420689.30 ns, 554.4860 ns/op
+WorkloadActual   4: 1048576 op, 574324900.90 ns, 547.7189 ns/op
+WorkloadActual   5: 1048576 op, 590394174.00 ns, 563.0438 ns/op
+WorkloadActual   6: 1048576 op, 560561449.06 ns, 534.5931 ns/op
+WorkloadActual   7: 1048576 op, 557405577.29 ns, 531.5834 ns/op
+WorkloadActual   8: 1048576 op, 604166742.64 ns, 576.1783 ns/op
+WorkloadActual   9: 1048576 op, 571597518.77 ns, 545.1179 ns/op
+WorkloadActual  10: 1048576 op, 582485166.97 ns, 555.5011 ns/op
+
+OutOfMemoryException!
+BenchmarkDotNet continues to run additional iterations until desired accuracy level is achieved. It's possible only if the benchmark method doesn't have any side-effects.
+If your benchmark allocates memory and keeps it alive, you are creating a memory leak.
+You should redesign your benchmark and remove the side-effects. You can use `OperationsPerInvoke`, `IterationSetup` and `IterationCleanup` to do that.
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown.
+   at System.Collections.Generic.List`1.set_Capacity(Int32 value)
+   at System.Collections.Generic.List`1.AddWithResize(T item)
+   at ForAndForEachComparison.Comparison.ForEachLoop() in C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\Comparison.cs:line 39
+   at BenchmarkDotNet.Autogenerated.Runnable_1.WorkloadActionUnroll(Int64 invokeCount) in C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\bin\Release\netcoreapp2.2\9ee8ef26-e8d0-4e28-b100-d512e46d9630\9ee8ef26-e8d0-4e28-b100-d512e46d9630.notcs:line 1383
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunAuto(Int64 invokeCount, IterationMode iterationMode, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.Run(Int64 invokeCount, IterationMode iterationMode, Boolean runAuto, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_1.Run(IHost host, String benchmarkName) in C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\bin\Release\netcoreapp2.2\9ee8ef26-e8d0-4e28-b100-d512e46d9630\9ee8ef26-e8d0-4e28-b100-d512e46d9630.notcs:line 812
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in C:\Users\ysant\source\repos\ForAndForEachComparison\ForAndForEachComparison\bin\Release\netcoreapp2.2\9ee8ef26-e8d0-4e28-b100-d512e46d9630\9ee8ef26-e8d0-4e28-b100-d512e46d9630.notcs:line 49
+// AfterAll
+ExitCode != 0
+No more Benchmark runs will be launched as NO measurements were obtained from the previous run!
+
+
+Successfully reverted power plan (GUID: 381b4222-f694-41f0-9685-ff5bb260df2e FriendlyName: Balanced)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\ForAndForEachComparison.Comparison-report.csv
+  BenchmarkDotNet.Artifacts\results\ForAndForEachComparison.Comparison-report-github.md
+  BenchmarkDotNet.Artifacts\results\ForAndForEachComparison.Comparison-report.html
+
+// * Detailed results *
+Comparison.ForLoop: DefaultJob
+Runtime = ; GC = 
+There are not any results runs
+
+Comparison.ForEachLoop: DefaultJob
+Runtime = ; GC = 
+There are not any results runs
+
+// * Summary *
+
+BenchmarkDotNet=v0.11.5, OS=Windows 10.0.17134.1 (1803/April2018Update/Redstone4)
+Intel Core i7-6600U CPU 2.60GHz (Skylake), 1 CPU, 4 logical and 2 physical cores
+Frequency=2742190 Hz, Resolution=364.6720 ns, Timer=TSC
+.NET Core SDK=2.2.108
+  [Host] : .NET Core 2.2.6 (CoreCLR 4.6.27817.03, CoreFX 4.6.27818.02), 64bit RyuJIT  [AttachedDebugger]
+
+
+|      Method | Mean | Error |
+|------------ |-----:|------:|
+|     ForLoop |   NA |    NA |
+| ForEachLoop |   NA |    NA |
+
+Benchmarks with issues:
+  Comparison.ForLoop: DefaultJob
+  Comparison.ForEachLoop: DefaultJob
+
+// * Warnings *
+Environment
+  Summary -> Benchmark was executed with attached debugger
+  Summary -> Detected error exit code from one of the benchmarks. It might be caused by following antivirus software:
+        - McAfee Endpoint Security (C:\Program Files (x86)\McAfee\Endpoint Security\Threat Prevention\AMCFG.EXE)
+        - Windows Defender (windowsdefender://)
+Use InProcessToolchain to avoid new process creation.
+
+
+// * Legends *
+  Mean  : Arithmetic mean of all measurements
+  Error : Half of 99.9% confidence interval
+  1 ns  : 1 Nanosecond (0.000000001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:00:38 (38.75 sec), executed benchmarks: 2
+
+Global total time: 00:01:01 (61.61 sec), executed benchmarks: 2
+// * Artifacts cleanup *
